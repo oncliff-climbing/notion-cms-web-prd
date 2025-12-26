@@ -7,7 +7,9 @@
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git push:*)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(node:*)",
+      "mcp__context7"
     ]
   },
   "enableAllProjectMcpServers": true,

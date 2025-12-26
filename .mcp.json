@@ -9,31 +9,33 @@
         "@playwright/mcp@latest"
       ],
       "env": {}
-    }
-  },
-  "context7": {
-    "type": "http",
-    "url": "https://mcp.context7.com/mcp",
-    "headers": {
-      "CONTEXT7_API_KEY": "ctx7sk-f553b959-d33a-43c5-a185-3f44c406eeb4"
-    }
-  },
-  "sequential-thinking": {
-    "command": "cmd",
-    "args": [
-      "/c",
-      "npx",
-      "@modelcontextprotocol/server-sequential-thinking"
-    ]
-  },
-  "shrimp-task-manager": {
-    "command": "node",
-    "args": ["/c/Users/Naint/workspace/claude-code-mastery/mcp-shrimp-task-manager/dist/index.js"],
-    "env": {
-      "DATA_DIR": "/c/Users/Naint/workspace/claude-code-mastery/notion-cms-web-prd/shrimp_data",
-      "TEMPLATES_USE": "en",
-      "ENABLE_GUI": "true"
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "ctx7sk-f553b959-d33a-43c5-a185-3f44c406eeb4"
+      }
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {}
+    },
+    "shrimp-task-manager": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["../../../mcp-shrimp-task-manager/dist/index.js"],
+      "env": {
+        "DATA_DIR": "./shrimp_data",
+        "TEMPLATES_USE": "en",
+        "ENABLE_GUI": "true"
+      }
     }
   }
 }
-
