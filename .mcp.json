@@ -28,11 +28,10 @@
       "env": {}
     },
     "shrimp-task-manager": {
-      "type": "stdio",
       "command": "node",
-      "args": ["../../../mcp-shrimp-task-manager/dist/index.js"],
+      "args": ["C:/Users/Naint/workspace/claude-code-mastery/mcp-shrimp-task-manager/dist/index.js"],
       "env": {
-        "DATA_DIR": "./shrimp_data",
+        "DATA_DIR": "C:/Users/Naint/workspace/claude-code-mastery/notion-cms-web-prd/shrimp_data",
         "TEMPLATES_USE": "en",
         "ENABLE_GUI": "true"
       }
